@@ -88,12 +88,23 @@ h1 {
   }
 
   .subtitle {
-    list-style: none;
     padding: 0;
     margin-top: 5px;
     width: 100%;
     overflow: hidden;
   }
+
+    .subtitle a {
+      flex-grow: 1;
+    }
+
+    .subtitle a:hover {
+      text-decoration: none;
+    }
+
+    .subtitle a:hover span, .subtitle a.active span, .sub-nav a.active span {
+      border-bottom: 1px solid #304FFE;
+    }
 
   .subtitle, h2 {
     color: #F44336;
@@ -103,10 +114,6 @@ h1 {
     letter-spacing: 6px;
   }
 
-    .subtitle li {
-      margin: 0;
-      padding: 0;
-    }
 
       @media (min-width: 768px) {
 
@@ -114,21 +121,16 @@ h1 {
           margin: 7px 0 12px 5px;
         }
 
-        .subtitle li {
-          float: left;
-          width: 25%;
-        }
-          .subtitle li:nth-child(2), .subtitle li:nth-child(3) {
-            text-align: center;
-          }
-          .subtitle li:last-child {
-            text-align: right;
-          }
       }
 
+
+  .sub-nav a {
+    font-size: 18px;
+    color: #FBC02D;
+    font-weight: bold;
+  }
+
   .book-cover {
-    max-width: 100%;
-    min-height: 300px;
     margin: 0 0 30px 0;
   }
 
@@ -195,3 +197,18 @@ h1 {
       margin-bottom: 15px;
     }
 }
+
+
+/*  Carousel */
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none!important;
+}
+
+.carousel-item {
+  height: 700px;
+}
+
+  .carousel-item a>img {
+    max-width: 100%!important;
+  }
