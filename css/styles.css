@@ -102,9 +102,14 @@ h1 {
       text-decoration: none;
     }
 
-    .subtitle a:hover span, .subtitle a.active span, .sub-nav a.active span {
-      border-bottom: 1px solid #304FFE;
+    .subtitle a:hover span, .subtitle a.active span {
+      border-bottom: 1px solid #B71C1C;
     }
+
+    .sub-nav a.active span, .sub-nav a:hover span {
+      border-bottom: 1px solid #F9A825;
+    }
+
 
   .subtitle, h2 {
     color: #F44336;
