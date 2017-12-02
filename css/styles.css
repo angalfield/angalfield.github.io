@@ -110,6 +110,10 @@ h1 {
       border-bottom: 1px solid #F9A825;
     }
 
+    .subtitle a span, .sub-nav a span {
+      line-height: 26px;
+    }
+
 
   .subtitle, h2 {
     color: #F44336;
@@ -120,10 +124,14 @@ h1 {
   }
 
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
 
         .subtitle {
           margin: 7px 0 12px 5px;
+        }
+
+        iframe {
+          height: 542px;
         }
 
       }
@@ -142,10 +150,30 @@ h1 {
     @media (max-width: 768px) {
       .book-cover {
         margin-bottom: 15px;
+        width: 100%!important;
+        height: auto!important
+      }
+      .carousel-item {
+        height: 500px!important;
       }
       .subtitle, h2 {
         font-size: 17px;
       }
+      .subtitle {
+        flex-direction: column !important;
+      }
+        .subtitle a {
+          text-align: left!important;
+          padding: 5px 2px;
+        }
+
+        .subtitle a span, .sub-nav a span {
+          line-height: 22px;
+        }
+
+        iframe {
+          height: 194px;
+        }
     }
 
   .modal {
@@ -205,6 +233,10 @@ h1 {
 
 
 /*  Carousel */
+
+.carousel-control-next, .carousel-control-prev {
+  width: 50%!important
+}
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-image: none!important;
