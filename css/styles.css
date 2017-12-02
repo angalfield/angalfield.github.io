@@ -88,12 +88,32 @@ h1 {
   }
 
   .subtitle {
-    list-style: none;
     padding: 0;
     margin-top: 5px;
     width: 100%;
     overflow: hidden;
   }
+
+    .subtitle a {
+      flex-grow: 1;
+    }
+
+    .subtitle a:hover {
+      text-decoration: none;
+    }
+
+    .subtitle a:hover span, .subtitle a.active span {
+      border-bottom: 1px solid #B71C1C;
+    }
+
+    .sub-nav a.active span, .sub-nav a:hover span {
+      border-bottom: 1px solid #F9A825;
+    }
+
+    .subtitle a span, .sub-nav a span {
+      line-height: 26px;
+    }
+
 
   .subtitle, h2 {
     color: #F44336;
@@ -103,42 +123,57 @@ h1 {
     letter-spacing: 6px;
   }
 
-    .subtitle li {
-      margin: 0;
-      padding: 0;
-    }
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
 
         .subtitle {
           margin: 7px 0 12px 5px;
         }
 
-        .subtitle li {
-          float: left;
-          width: 25%;
+        iframe {
+          height: 542px;
         }
-          .subtitle li:nth-child(2), .subtitle li:nth-child(3) {
-            text-align: center;
-          }
-          .subtitle li:last-child {
-            text-align: right;
-          }
+
       }
 
+
+  .sub-nav a {
+    font-size: 18px;
+    color: #FBC02D;
+    font-weight: bold;
+  }
+
   .book-cover {
-    max-width: 100%;
-    min-height: 300px;
     margin: 0 0 30px 0;
   }
 
     @media (max-width: 768px) {
       .book-cover {
         margin-bottom: 15px;
+        width: 100%!important;
+        height: auto!important
+      }
+      .carousel-item {
+        height: 500px!important;
       }
       .subtitle, h2 {
         font-size: 17px;
       }
+      .subtitle {
+        flex-direction: column !important;
+      }
+        .subtitle a {
+          text-align: left!important;
+          padding: 5px 2px;
+        }
+
+        .subtitle a span, .sub-nav a span {
+          line-height: 22px;
+        }
+
+        iframe {
+          height: 194px;
+        }
     }
 
   .modal {
@@ -195,3 +230,22 @@ h1 {
       margin-bottom: 15px;
     }
 }
+
+
+/*  Carousel */
+
+.carousel-control-next, .carousel-control-prev {
+  width: 50%!important
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none!important;
+}
+
+.carousel-item {
+  height: 700px;
+}
+
+  .carousel-item a>img {
+    max-width: 100%!important;
+  }
