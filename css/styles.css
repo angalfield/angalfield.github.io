@@ -25,20 +25,16 @@ hr {
 }
 
 h1 {
-  letter-spacing: .15em;
-  font-size: 12.65em;
+  font-size: 2.87rem;
+  padding-top: 18px;
+  letter-spacing: .4rem;
+  word-spacing: 15px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 0;
   line-height: .9em;
   color: #304FFE;
+  text-align: justify;
 }
-
-  .title h1:last-child {
-    display: block;
-    letter-spacing: .49em;
-    color: #0D47A1;
-    margin-top: 5px;
-  }
 
   h1, .logo h4 {
     font-weight:bold;
