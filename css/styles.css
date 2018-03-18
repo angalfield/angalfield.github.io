@@ -36,6 +36,12 @@ h1 {
   text-align: justify;
 }
 
+  h1:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
   h1, .logo h4 {
     font-weight:bold;
     text-transform: uppercase;
