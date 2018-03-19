@@ -29,11 +29,12 @@ h1 {
   padding-top: 18px;
   letter-spacing: .4rem;
   word-spacing: 15px;
-  margin: 0 0 2px;
+  margin: 0;
   padding-bottom: 0;
-  line-height: .9em;
+  line-height: 2rem;
   color: #304FFE;
   text-align: justify;
+  margin-bottom: -1.7rem;
 }
 
   h1:after {
