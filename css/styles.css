@@ -22,14 +22,10 @@ h1 {
 }
 
 
-.navbar a, h1, h2, body {
+h1 {
   font-size: 1.675rem;
 }
 
-
-p {
-  font-size: 1.25rem;
-}
 
 
 .photogrid {
@@ -52,8 +48,16 @@ p {
     padding: 15px;
   }
 
-
   @media (min-width: 992px) {
+    
+   .navbar a, h2, body {
+      font-size: 1.675rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+    
     .photogrid {
       grid-column-gap: 100px;
       grid-row-gap: 100px;
